@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Form to apply for WEB Dev</h1>
+    <form action="post"> <!--post action is used to send data to server-->
+        <div>
+            <label for="username">Enter your Username</label>
+            <!--id is unique identifier for all input tags and will be same for label(for="choose") and input(id="choose")-->
+            <input type="text" id="username" name="username" placeholder="Enter your username" autofocus>
+        </div>
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <!--if name is same for 2 or multiple radio buttons then only one will be selected at a time-->
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </div>
+        <div>
+            <input type="checkbox" name="subscribe" id="subscribe">
+            <label for="subscribe">Subscribe</label>
+        </div>
+        <div>
+            <label for="fruits">Choose Fruits</label>
+            <select name="fruits" id="fruits">
+                <option value="null">choose</option>
+                <option value="apple">Apple</option>
+                <option value="mango">Mango</option>
+                <option value="pinaple">Pinaple</option>
+            </select>
+        </div>
+        <div>
+            <label for="commnet">Enter yout comment</label>
+            <textarea name="comment" id="comment" cols="36" rows="4"></textarea>
+        </div>
+    </form>
+</body>
+
+</html>

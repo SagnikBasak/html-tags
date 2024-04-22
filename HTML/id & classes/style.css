@@ -1,0 +1,7 @@
+.red{       /*.red means red class dot indicates class */
+    color: rgb(255, 0, 0);
+}
+
+#firstdiv{  /* #firstdiv means firstdiv id (#) indicated id */
+    background-color: rgb(255, 255, 0);
+}

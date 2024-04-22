@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROW & Colum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img width="400" src="download.jpeg" alt="train image"> <!--alt attribute is used to display a alternative text if the image cant be displayed-->
+    <table>
+        <caption>Student Details</caption>
+        <thead> <!--To group the table-->
+            <tr> <!--Table row-->
+                <th>Name</th> <!--Table head-->
+                <th>Age</th>
+                <th>Designation</th>
+                <th>Experience</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sagnik Basak</td> <!--Table data-->
+                <td rowspan="3">23</td>
+                <td>Developer</td>
+                <td rowspan="3">3 yrs</td><!--to merge row rowspan-->
+            </tr>
+            <tr>
+                <td>Oishik Mandal</td>
+                <td rowspan="2">Engineer</td>
+            </tr>
+            <tr>
+                <td>Sourav Saha</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="4">End of the Report</td> <!--to merge colum col span-->
+        </tfoot>
+    </table>
+</body>
+
+</html>
