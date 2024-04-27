@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Property</title>
+    <style>
+        .container{
+            background-color: aqua;
+            width: 50vw;
+            height: 40vh; 
+        }
+        
+        .box{
+            background-color: rgb(72, 0, 255);
+            width: 5vw;
+            height: 4vh;
+            transition-property: transform, background-color; /* this means in which property i need to ad transition */
+            transition-duration: 2s; /* this is the duration of the transition */
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s; /* this means after how many time it will work */
+            transition: all 2s ease-in-out 0s; /* without writing all of these we can simply write this */
+        }
+        .translate{
+            transform: translateX(10vw) translateY(10vh);
+            background-color: blueviolet;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+</html>

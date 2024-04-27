@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object-fit and Object-cover</title>
+    <style>
+        .container {
+            height: 466px;
+            width: 488px;
+            border: 2px solid black;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvRzSGyoPFkAK611PRdY8mApcrkJOHxX_rXw&s");
+            background-size: cover; /* Ensure the background image covers the container */
+            background-position: top right; /* Position the background image */
+        }
+        img {
+            height: 466px;
+            width: 488px;
+            object-fit: cover;
+            object-position: top right;
+            /* object-fit: contain; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://images.hdqwalls.com/wallpapers/girl-taking-a-photo-in-nature-8k-bt.jpg" alt="image"> -->
+    </div>
+</body>
+</html>

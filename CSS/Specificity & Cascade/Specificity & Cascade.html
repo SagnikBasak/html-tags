@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity & Cascade</title>
+    <style>
+        h1 {
+            color: aqua;
+        }
+
+        .yellow {
+            color: yellow !important;
+        }
+
+        h1.cred {
+            color: red;
+        }
+
+        .cpurple {
+            color: purple;
+        }
+
+        [data-x=a] {
+            /*attribute selector*/
+            color: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+        <!--  the order in which specificity determines
+               1. position 
+               2. specificity
+               3. origin
+               4. importance -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: aqua;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transform: rotate(0.5turn); */
+            transform: rotate(35deg);
+            transform-origin: -0% -0%;
+            /* transform: rotateX(40deg); */
+            /* transform: rotateY(69deg); */
+            /* transform: rotateZ(69deg); */
+            /* transform: scale(1.5); */
+            /* transform: scaleX(1.5); */
+            /* transform: scaleY(1.5); */
+            /* transform: scaleZ(1.5); */  /* scale property is used to enlarge the object*/
+            /* transform: skew(35deg); */
+            /* transform: skewX(33deg); */
+            /* transform: skewY(33deg); */
+            /* transform: translateX(100%); The tanslate is used to shift the obeject in its width or height */
+            /* transform: translateX(100%) translateY(100%) rotate(45deg) skew(45deg); */
+
+        }
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.left-common {
+    padding: 22px;
+    box-sizing: border-box;
+    background-color: #121212;
+    border-radius: 7px;
+}
+
+.scrollable-left {
+    background-color: #1f1f1f;
+    margin: 13px 5px 0px 0px;
+    padding: 13px 25px;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+.scrollable-left button {
+    border: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 700;
+    width: 53%;
+    margin: 5px 0;
+}
