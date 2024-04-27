@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: [C1st] 120px [C2nd] 100px;
+            grid-template-rows: [R1st] 100px [R2nd] 100px [R3rd] 100px;
+        }
+        /* to use the grid property we have to use the display:grid; the next thing is grid-template-column and grid-template-rows is used to devide the rows and colums in desired value. to name the lines we can use [1st] and then the sizing */
+        .items{
+            border: 2px solid red;
+            width: 55px;
+            height: 55px;
+        }
+        .item-4{
+            grid-row: R1st/R2nd;
+            grid-column: 1/2;
+        }
+        /* the item-4 class is use to place the object in the desired place like 1/2 means the div will start from 1st line to 2nd line */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items item-4">4</div>
+        <div class="items">5</div>
+    </div>
+</body>
+</html>

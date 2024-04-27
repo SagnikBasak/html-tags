@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Website Builder</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        .card {
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border: 2px solid black;
+            width: 850px;
+            color: #fff;
+            background-color: #000;
+            border-radius: 8px;
+            margin: 5px;
+        }
+
+        .image {
+            height: 112.188px;
+            position: relative;
+        }
+
+        .image img {
+            width: 200px;
+        }
+
+        .text h2,
+        p {
+            padding: 2px 0;
+        }
+        .capsule{
+            position: absolute;
+            bottom: 2px;
+            right: 2px;
+            background-color: #000000d0;
+            border-radius: 4px;
+            padding: 0 5px;
+            z-index: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw"
+                    alt="Thumbnail">
+                <div class="capsule">31:06</div>
+            </div>
+            <div class="text">
+                <h2>Introduction to Backend | Sigma Web Dev video #2</h2>
+                <p>CodeWithHarry • 727K views • 2 months ago</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

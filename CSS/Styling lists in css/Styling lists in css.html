@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling lists in css</title>
+    <style>
+        .list ul li {
+            list-style: devanagari;
+            background-color: rgb(0, 255, 195);
+            list-style-position: inside;
+            /* to add the numbering system inside the color */
+            border: 2px solid rgb(126, 124, 124);
+            list-style-type: "☠️";
+            list-style-image: url(https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif);
+        }
+
+        .list1 ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .list1 ul li {
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="list1">
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <nav class="list">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+
+</html>

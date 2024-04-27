@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+    <style>
+        body {
+            background-color: aquamarine;
+        }
+
+        @media screen and (orientation: portrait) {
+            body{
+                border: 5px solid purple;
+            }
+        }
+
+        @media only screen and (max-width: 455px) {
+            body {
+                background-color: yellow;
+            }
+        }
+        /* @media not|only screen and (expressions){
+            css code{};
+            this used to switch between multiple devices like phone or laptop
+        } */
+
+        .boxes {
+            display: flex;
+        }
+
+        .box {
+            width: 300px;
+            min-width: 150px;
+            height: 300px;
+            margin: 5px;
+            box-sizing: border-box;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        hey i am a red body guy!
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

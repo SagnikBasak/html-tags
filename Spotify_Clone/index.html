@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="container">
+            <div class="sidebar">
+                <div class="sidebar-item"><img src="assets/img/logo.svg" alt="logo">
+                    <div class="home-search">
+                        <ul>
+                            <li><img src="assets/img/home.svg" alt="home">Home</li>
+                            <li><img src="assets/img/search.svg" alt="search">Search</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar-item">
+                    <div class="heading">
+                        <img src="assets/img/library.svg" alt="library">
+                        <h3>Your library</h3>
+                        <img class="plus-svg" src="assets/img/plus.svg" alt="plus">
+                    </div>
+                    <div class="scrollable">
+                        <div class="songList">
+                            <ul></ul>
+                        </div>
+                        <!-- <div class="scrollable-left">
+                            <h4>Create your first playlist</h4>
+                            <h5>It's easy, we'll help you</h5>
+                            <button class="hover">Create playlist</button>
+                        </div>
+                        <div class="scrollable-left">
+                            <h4>Let's find some podcasts to follow</h4>
+                            <h5>We'll keep you updated on new episodes</h5>
+                            <button class="hover">Browse podcasts</button>
+                        </div> -->
+                    </div>
+                    <!-- <footer>
+                        <a href="#">Legal</a>
+                        <a href="#">Safety & Privacy Center</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookies</a>
+                        <a href="#">About Ads</a>
+                        <a href="#">Accessibility</a>
+                    </footer>
+                    <div class="lang hover">
+                        <img src="assets/img/lang.svg" alt="lang">
+                        <button>English</button>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="main-item">
+                <header>
+                    <div class="nav">
+                        <img class="hamburger" id="hamburger" src="assets/img/menu.svg" alt="hamburger">
+                        <img src="assets/img/left.svg" alt="left">
+                        <img src="assets/img/right.svg" alt="right">
+                    </div>
+                    <div class="s-btn">
+                        <button class="sign-up hover">Sign up</button>
+                        <button class="log-in hover">Log in</button>
+                    </div>
+                </header>
+                <main>
+                    <h2>Spotify playlists</h2>
+                    <div class="card-container">
+                        <div class="card hover">
+                            <div class="play">
+                                <img src="assets/img/play.svg" alt="play">
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f00000002a6a35d85da2b230f63a0005a" alt="">
+                            <h3>Dinner with Friends</h3>
+                            <p>The perfect soundtrack to those long nights over dinner</p>
+                        </div>
+                        <div class="card hover">
+                            <div class="play">
+                                <img src="assets/img/play.svg" alt="play">
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f00000002fd4af4581daf8d52558ab410" alt="">
+                            <h3>Chill Hop</h3>
+                            <p>The perfect soundtrack to those long nights over dinner</p>
+                        </div>
+                        <div class="card hover">
+                            <div class="play">
+                                <img src="assets/img/play.svg" alt="play">
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f0000000242ede53dcaaa172b7bbca101" alt="">
+                            <h3>Soft pop hits</h3>
+                            <p>The perfect soundtrack to those long nights over dinner</p>
+                        </div>
+                        <div class="card hover">
+                            <div class="play">
+                                <img src="assets/img/play.svg" alt="play">
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67616d00001e02ab80bdcc6318a2c55befe767" alt="">
+                            <h3>Bollywood Lo-fi</h3>
+                            <p>The perfect soundtrack to those long nights over dinner</p>
+                        </div>
+                        <div class="card hover">
+                            <div class="play">
+                                <img src="assets/img/play.svg" alt="play">
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f00000002472120b92edea982b5feb264" alt="">
+                            <h3>Jazz in the background</h3>
+                            <p>The perfect soundtrack to those long nights over dinner</p>
+                        </div>
+                        <div class="card hover">
+                            <div class="play">
+                                <img src="assets/img/play.svg" alt="play">
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67706f000000029527413150cbd6d9b2a3785a" alt="">
+                            <h3>Calming Aquastics</h3>
+                            <p>The perfect soundtrack to those long nights over dinner</p>
+                        </div>
+                        <div class="card hover">
+                            <div class="play">
+                                <img src="assets/img/play.svg" alt="play">
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67616d00001e02ab80bdcc6318a2c55befe767" alt="">
+                            <h3>Bollywood Lo-fi</h3>
+                            <p>The perfect soundtrack to those long nights over dinner</p>
+                        </div>
+                    </div>
+                </main>
+            </div>
+
+        </div>
+        <div class="playbar">
+            <div class="songinfo">
+                <img src="assets/img/music.svg" alt="songthumbnail">
+                <div>
+                    <p class="sname"></p>
+                </div>
+            </div>
+            <div class="songcontrols">
+                <div class="songbtn">
+                    <!-- <img class="hover" src="assets/img/shuffle.svg" alt="shuffle"> -->
+                    <img class="hover" id="previous" src="assets/img/previous.svg" alt="previous">
+                    <img class="hover" id="play" src="assets/img/play2.svg" alt="play">
+                    <img class="hover" id="next" src="assets/img/next.svg" alt="next">
+                    <!-- <img class="hover" src="assets/img/repeat.svg" alt="repeat"> -->
+                </div>
+                <div class="songTimings">
+                    <div class="currentTime">-- : --</div>
+                    <div class="seekbar">
+                        <div class="circle">
+                            
+                        </div>
+                    </div>
+                    <div class="totalTime">-- : --</div>
+                </div>
+            </div>
+            <div class="volno">
+                <img src="assets/img/vol.svg" alt="volume" id="volsvg">
+                <input type="range" id="volume-bar" min="0" max="100" value="50">
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>

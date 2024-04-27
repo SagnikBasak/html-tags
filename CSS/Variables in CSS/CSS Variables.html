@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            --color:rgb(115, 231, 252);
+            --seccolor:rgb(141, 141, 220);
+            --Dopacity: 0.5;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding: 10px;
+            border: 2px solid var(--seccolor);
+            opacity: var(--Dopacity);
+        }
+        ul li:first-child{
+            --color:rgb(115, 238, 252);
+            background-color: var(--DefaultColor, rgb(223, 224, 210));
+            /* this means if the --DefaultColor veriable is not found then use the color blue  */
+        }
+        .nav{
+            background-color: var(--color);
+        }
+
+        .container{
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ul>
+    </div>
+    <div class="container">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate sunt laborum aspernatur voluptate numquam excepturi, modi architecto officiis illo iure saepe facilis harum magnam eius nihil alias iste, in ipsam, dolorem nostrum cumque magni.</div>
+</body>
+</html>

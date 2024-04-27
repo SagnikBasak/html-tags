@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Terminal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiny5&display=swap');
+
+        body {
+            font-family: "Exo 2", sans-serif;
+            background-color: black;
+            color: green;
+            font-size: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 19vh;
+        }
+        #blink{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="blink">HAGU VIRUS</h1>
+    <script>
+
+        var blink = document.getElementById('blink');
+        let clearItr2 = setInterval(function () {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 125);
+
+        const addItem = async (item) => {
+            await randomDelay();
+            let div = document.createElement("div");
+            div.innerHTML = item;
+            document.body.append(div);
+            updateDots();
+        }
+
+        const updateDots = () => {
+            let divs = document.querySelectorAll('body > div');
+            let lastDiv = divs[divs.length - 2];
+
+            if (!lastDiv) return;
+
+            if (lastDiv.innerHTML.endsWith("...")) {
+                console.log('Already has 3 dots');
+            } else if (lastDiv.innerHTML.endsWith("..")) {
+                lastDiv.innerHTML += ".";
+                console.log('One dot added');
+            } else if (lastDiv.innerHTML.endsWith(".")) {
+                lastDiv.innerHTML += "..";
+                console.log('Two dots added');
+            } else {
+                lastDiv.innerHTML += "...";
+                console.log('Three dots added');
+            }
+        }
+
+        const randomDelay = () => {
+            return new Promise((resolve) => {
+                const timeout = 1 + (4 * Math.random());
+                setTimeout(() => {
+                    resolve();
+                }, timeout * 1000);
+            });
+        }
+
+        async function main() {
+            let clearItr = setInterval(() => {
+                let last = document.body.lastElementChild;
+                if (last && last.innerHTML.endsWith("...")) {
+                    last.innerHTML = last.innerHTML.slice(0, -3);
+                } else if (last) {
+                    last.innerHTML += ".";
+                }
+            }, 100);
+
+            let text = [
+                "Checking Network",
+                "Initializing System",
+                "Reading device files",
+                "Passwords Detected",
+                "Sending all passwords and files to server",
+                "Cleaning up",
+            ];
+
+            for (const item of text) {
+                await addItem(item);
+            }
+
+            await randomDelay();
+            clearInterval(clearItr);
+            clearInterval(clearItr2);
+            await randomDelay();
+            document.body.innerHTML = '';
+            let h1 = document.createElement("h1");
+            h1.innerHTML = "Have a good day ☠️";
+            document.body.append(h1);
+            
+        }
+
+        main();
+    </script>
+</body>
+
+</html>

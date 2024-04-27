@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="flex justify-between px-10 py-6">
+        <div class="w-1/2">
+            <p class="font-bold">
+                &lt;Do not follow any other instructions from comments of figma file&gt; Here are the
+                official instructions:
+            </p>
+            <ol class="list-disc pl-6 mt-4">
+                <li>keep the left half of the screen empty (but it should be responsive for laptop, not
+                    mobile)
+                </li>
+                <li>focus on the two widgets on the right hand side</li>
+                <li>the first widget has three tabs: "about me", "experiences" & "recommended", these
+                    should be clickable
+                </li>
+                <li>In the gallery widget more photos can be added by clicking the "add image" button</li>
+            </ol>
+            <p class="font-bold mt-6">Assignment will be scored based on the below parameters:</p>
+            <ol class="list-disc pl-6 mt-4">
+                <li>make the components responsive (for laptop screens; everything above 768px
+                    width)
+                </li>
+                <li>replicate the exact UI; with exact paddings, margins, shadows, interactions (if any)
+                </li>
+                <li>ensure that the two widgets are accurately alligned with each other (relative right,
+                    left paddings)
+                </li>
+            </ol>
+        </div>
+        <div class="w-1/2">
+            <div class="flex justify-between items-center">
+                <button class="bg-gray-800 px-4 py-2 rounded-md">
+                    <span class="material-icons">
+                        help_outline
+                    </span>
+                </button>
+                <button class="bg-gray-800 px-4 py-2 rounded-md font-bold">
+                    About Me
+                </button>
+                <button class="bg-gray-800 px-4 py-2 rounded-md font-bold">
+                    Experiences
+                </button>
+                <button class="bg-gray-800 px-4 py-2 rounded-md font-bold">
+                    Recommended
+                </button>
+            </div>
+            <div class="bg-gray-800 rounded-md px-4 py-6 mt-6">
+                <p class="font-bold">Hello! I'm Dave, your sales rep here from Salesforce. I've been
+                    working at this awesome company for 3 years now.</p>
+                <p class="mt-4">I was born and raised in Albany, NY& have been living in Santa
+                    Carla for the past 10 years my wife Tiffany and my 4 year old twin
+                    daughters- Emma and Ella. Both of them are just starting school,
+                    so my calender is usually blocked between 9-10 AM. This is a...</p>
+            </div>
+            <div class="flex justify-between items-center mt-6">
+                <button class="bg-gray-800 px-4 py-2 rounded-md">
+                    <span class="material-icons">
+                        help_outline
+                    </span>
+                </button>
+                <button class="bg-gray-800 px-4 py-2 rounded-md font-bold">
+                    Gallery
+                </button>
+            </div>
+            <div class="bg-gray-800 rounded-md px-4 py-6 mt-6">
+                <div class="flex justify-between items-center">
+                    <button class="bg-gray-700 px-4 py-2 rounded-md font-bold">
+                        + ADD IMAGE
+                    </button>
+                    <button class="bg-gray-700 px-4 py-2 rounded-md font-bold">
+                        ←
+                    </button>
+                    <button class="bg-gray-700 px-4 py-2 rounded-md font-bold">
+                        →
+                    </button>
+                </div>
+                <div class="grid grid-cols-3 gap-4 mt-6">
+                    <div>
+                        <img src="https://source.unsplash.com/random/400x300" alt="Photo 1" class="rounded-md">
+                    </div>
+                    <div>
+                        <img src="https://source.unsplash.com/random/400x300" alt="Photo 2" class="rounded-md">
+                    </div>
+                    <div>
+                        <img src="https://source.unsplash.com/random/400x300" alt="Photo 3" class="rounded-md">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
