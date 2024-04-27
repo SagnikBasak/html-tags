@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            width: 80vw;
+            height: 50vh;
+            align-items: center;
+            justify-items: center;
+            place-content: center;
+            border: 2px solid black;
+            display: grid;
+            /* grid-template-areas: "nav nav nav"
+                                    "side article article"
+                                    "footer footer footer"; */
+            grid-template-columns: repeat(3, minmax(100px, 1fr));
+            /* the repeat(3, minmax(100px, 1fr)) repeat 3 means it will be divided in 3 section with 1fr with a minimum 100px */
+            row-gap: 30px;
+            column-gap: 30px;
+        }
+
+        .items {
+            border: 2px solid red;
+            height: 70px;
+            width: 70px;
+        }
+
+        .item-1{
+            /* grid-area: nav; */
+        }
+
+        .item-2{
+            /* grid-area: side; */
+        }
+
+        .item-3{
+            /* grid-area: article; */
+        }
+
+        .item-4{
+            /* grid-area: footer; */
+        }
+        /* the item-4 class is use to place the object in the desired place like 1/2 means the div will start from 1st line to 2nd line */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items item-1">1</div>
+        <div class="items item-2">2</div>
+        <div class="items item-3">3</div>
+        <div class="items item-4">4</div>
+    </div>
+</body>
+
+</html>

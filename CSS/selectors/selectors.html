@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectros</title>
+    <style>
+        /* Element selectors */
+
+        /* Universal selectors*/
+        *{  /* to select all the elements we use (*) */
+            margin: 0;
+            padding: 0;
+        }
+        /* class selector */
+        .red{
+            background-color: red;
+        }
+        /* id selector */
+        #yellow{
+            background-color: yellow;
+        }
+        /* child selector */
+        div > p{   /* if we want to select a paragraph from a div  */
+            color: yellow;
+            background-color:red;
+        }
+        /* Descendant selector */
+        div p{
+            color: blue;
+            background-color:darkmagenta;
+        }
+        /* pseudo selectors */
+        a:visited{
+            color: green; /* if visited the color will be yellow */
+        }
+        a:link{
+            color: red; /* if not visited the color will be red */
+        }
+        a:active{
+            background-color: aqua;
+        }
+        a:hover{
+            color: blue;
+        }
+        p:first-child{  /* where p tag is the first child of the parent tag the condition will apply */
+            background-color: aqua;
+        }
+        [data-x=a] {
+            /*attribute selector*/
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="cred" data-x="a">Attribute Selector</h1>
+    </div>
+    <main>
+        <p>I am a para 1</p>
+        <p>I am a para 2</p>
+        <p>I am a para 3</p>
+    </main>
+    <div class="red">
+        i am a red div
+    </div>
+    <div id="yellow">
+        i am another div
+    </div>
+    <div>
+        <span>
+            <p>
+                I am a para inside div span <!-- notice that the para is not directly inside the div thearefore the element will not work, we have to use decendant selector to select all the para tag inside the div -->
+            </p>
+        </span>
+    </div>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.facebook.com">Facebook</a>
+</body>
+</html>

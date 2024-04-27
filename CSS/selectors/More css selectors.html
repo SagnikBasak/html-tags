@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More css selectors</title>
+    <style>
+
+        /* .box:first-child{
+            background-color: red;
+        } */
+
+        /* .box::first-line{
+            background-color: yellow;    it will apply only in first line 
+        } */
+        
+        /* .boxes *{
+            color: blueviolet;
+            border: 2px solid black;
+        }
+
+        p, a, .box, [data-clr="primary"]{
+            margin-top: 20px;
+            padding: 15px;
+        } */
+
+        .box:nth-child(even){
+            background-color:blueviolet;
+        }
+
+        .box:nth-last-child(1){
+            background-color: red;
+        }
+
+        .boxes::before{
+            content: "Sagnik is good";
+        }
+
+        .boxes::after{
+            content: "Sigma course is good";
+        }
+
+        ::selection{
+            color: aqua;
+            background-color: black;
+        }
+
+        input::placeholder{
+            color: peru;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-clr="primary" class="box">Hey i am first box</div>
+        <div class="box">Hey i am a box</div>
+        <div class="box">Hey i am a box</div>
+        <div class="box">Hey i am a box</div>
+        <div class="box">Hey i am a box</div>
+        <div class="box">Hey i am a box</div>
+        <div class="box">Hey i am a box</div>
+        <div class="box">Hey i am a box</div>
+        <input type="text" placeholder="My color changed">
+    </div>
+</body>
+</html>
